@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head id="trainingsPlanHead">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetHealthy - Trainingsplan</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../JS/JSONContent/TrainingsDaten.js" defer></script>
+    <script src="../JS/Trainingsplan.js" defer></script>
+</head>
+<body>
+<header>
+    <a href="../index.html">
+        <div class="banner">
+            <div class="bannerImages"></div>
+            <h1>Get<b>Healthy</b></h1>
+        </div>
+    </a>
+    <div class="nav">
+        <a href="Trainingsplan.html" class="navitem">
+            <div id="current">Trainingsplan</div>
+        </a>
+        <a href="Gesundheitstipps.html" class="navitem">
+            <div>Gesundheitstipps</div>
+        </a>
+        <a href="Rezepte.html" class="navitem">
+            <div>Rezepte</div>
+        </a>
+        <a href="Profil.html" class="navitem">
+            <div>Dein Profil</div>
+        </a>
+    </div>
+</header>
+<h2>Trainingspläne</h2>
+<h3>nach deinen Vorstellungen</h3>
+<h2 style="margin-top: 4% ">Deine Trainings</h2>
+<div class="swiper trainingsSwiper">
+    <div class="swiper-wrapper" id="startedTrainingsSwiper">
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<div id="trainingContent">
+    <div class="row">
+        <div class="trainingsBox" onclick="exercisesDetails(3)">
+            <img src="../Images/Training Muskelgruppen/Muskelgruppen-Funktion-und-Training-–-Armmuskulatur.jpg"
+                 alt="">
+            <div class="column">
+                <h4>Armmuskulatur</h4>
+                <p>Trainiere mit 3 Übungen deine Armmuskulatur </p>
+            </div>
+        </div>
+        <div class="trainingsBox" onclick="exercisesDetails(4)">
+            <img src="../Images/Training Muskelgruppen/Muskelgruppen-Funktion-und-Training-–-Beinmuskulatur.jpg"
+                 alt="">
+            <div class="column">
+                <h4>Beinmuskulatur</h4>
+                <p>Trainiere mit 5 Übungen deine Beinmuskulatur </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="trainingsBox" onclick="exercisesDetails(0)">
+            <img src="../Images/Training Muskelgruppen/Muskelgruppen-Funktion-und-Training-–-Brustmuskulatur.jpg"
+                 alt="">
+            <div class="column">
+                <h4>Brustmuskulatur</h4>
+                <p>Trainiere mit 5 Übungen deine Brustmuskulatur </p>
+            </div>
+        </div>
+        <div class="trainingsBox" onclick="exercisesDetails(1)">
+            <img src="../Images/Training Muskelgruppen/Muskelgruppen-Funktion-und-Training-–-Rueckenmuskulatur.jpg"
+                 alt="">
+            <div class="column">
+                <h4>Rückenmuskulatur</h4>
+                <p>Trainiere mit 3 Übungen deine Rückenmuskulatur </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="trainingsBox" onclick="exercisesDetails(5)">
+            <img src="../Images/Training Muskelgruppen/Muskelgruppen-Funktion-und-Training-–-Rumpfmuskulatur.jpg"
+                 alt="">
+            <div class="column">
+                <h4>Rumpfmuskulatur</h4>
+                <p>Trainiere mit 3 Übungen deine Rumpfmuskulatur </p>
+            </div>
+        </div>
+        <div class="trainingsBox" onclick="exercisesDetails(2)">
+            <img src="../Images/Training Muskelgruppen/Muskelgruppen-Funktion-und-Training-–-Schultermuskulatur.jpg"
+                 alt="">
+            <div class="column">
+                <h4>Schultermuskulatur </h4>
+                <p>Trainiere mit 3 Übungen deine Schultermuskulatur </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper trainingsImageSwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" id="imagesSwiper">
+            <img src="../Images/PagesPictures/Training_SlideshowPictures (1).jpg"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../Images/PagesPictures/Training_SlideshowPictures (2).jpg"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../Images/PagesPictures/Training_SlideshowPictures (3).jpg"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../Images/PagesPictures/Training_SlideshowPictures (4).jpg"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../Images/PagesPictures/Training_SlideshowPictures (5).jpg"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../Images/PagesPictures/Training_SlideshowPictures (6).jpg"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../Images/PagesPictures/Training_SlideshowPictures (7).jpg"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../Images/PagesPictures/Training_SlideshowPictures (8).jpg"/>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<footer>
+    <h1>Get<b>Healthy</b></h1>
+    <div class="row">
+        <div class="threeColumns">
+            <p><a href="./Trainingsplan.html">Trainingsplan</a></p>
+            <p><a href="./Gesundheitstipps.html">Gesundheitstipps</a></p>
+            <p><a href="./Rezepte.html">Rezepte</a></p>
+            <p><a href="./Profil.html">Dein Profil</a></p>
+        </div>
+        <div class="threeColumns">
+            <p>Bleib auf dem Laufenden mit den neuesten Artikeln, Tipps und Rezepten, um einen
+                gesunden und aktiven Lebensstil zu fördern.
+            </p>
+            <img src="../Images/icons8-facebook-48.png" alt="">
+            <img src="../Images/icons8-instagram-48.png" alt="">
+            <img src="../Images/icons8-tiktok-48.png" alt="">
+            <img src="../Images/icons8-youtube-48.png" alt="">
+        </div>
+        <div class="threeColumns">
+            <p>0676 821256826</p>
+            <p>getHealthy@office.com</p>
+            <p>Leondinger Straße 8</p>
+            <p>4060 Leonding</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

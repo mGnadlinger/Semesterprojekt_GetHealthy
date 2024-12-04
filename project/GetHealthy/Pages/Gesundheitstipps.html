@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetHealthy - Gesundheitstipps</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <script src="../JS/JSONContent/TippDaten.js" defer></script>
+    <script src="../JS/Gesundheitstipps.js" defer></script>
+</head>
+<body>
+<header>
+    <a href="../index.html">
+        <div class="banner">
+            <div class="bannerImages">
+            </div>
+            <h1>Get<b>Healthy</b></h1>
+        </div>
+    </a>
+    <div class="nav">
+        <a href="Trainingsplan.html" class="navitem">
+            <div>Trainingsplan</div>
+        </a>
+        <a href="Gesundheitstipps.html" class="navitem">
+            <div id="current">Gesundheitstipps</div>
+        </a>
+        <a href="Rezepte.html" class="navitem">
+            <div>Rezepte</div>
+        </a>
+        <a href="Profil.html" class="navitem">
+            <div>Dein Profil</div>
+        </a>
+    </div>
+</header>
+<h2>Gesundheitstipps</h2>
+<h3>Die dir im Alltag helfen sollen</h3>
+<div id="toplistBox">
+    <h2>Die Top 5 Tipps</h2>
+    <ol>
+        <li onclick="showOneTipp(26)">Achtsam ernähren</li>
+        <li onclick="showOneTipp(9)">Genügend Schlaf</li>
+        <li onclick="showOneTipp(17)">Weniger Alkohol trinken</li>
+        <li onclick="showOneTipp(12)">Niemals aufgeben!</li>
+        <li onclick="showOneTipp(14)">Gesund leben geht auch ohne Verzicht</li>
+    </ol>
+    <div id="startPoint"></div>
+</div>
+<h2>Weitere Tipps</h2>
+<div id="allTipps"></div>
+<div id="pageNavigation">
+    <h3 onclick="previousTipps()">&lt;</h3>
+    <div class="circlePageNav" onclick="showTipps(0)" id="circlePageNav0">1</div>
+    <div class="circlePageNav" onclick="showTipps(1)" id="circlePageNav1">2</div>
+    <div class="circlePageNav" onclick="showTipps(2)" id="circlePageNav2">3</div>
+    <div class="circlePageNav" onclick="showTipps(3)" id="circlePageNav3">4</div>
+    <h3 onclick="nextTipps()">&gt;</h3>
+</div>
+<footer>
+    <h1>Get<b>Healthy</b></h1>
+    <div class="row">
+        <div class="threeColumns">
+            <p><a href="./Trainingsplan.html">Trainingsplan</a></p>
+            <p><a href="./Gesundheitstipps.html">Gesundheitstipps</a></p>
+            <p><a href="./Rezepte.html">Rezepte</a></p>
+            <p><a href="./Profil.html">Dein Profil</a></p>
+        </div>
+        <div class="threeColumns">
+            <p>Bleib auf dem Laufenden mit den neuesten Artikeln, Tipps und Rezepten, um einen
+                gesunden und aktiven Lebensstil zu fördern.
+            </p>
+            <img src="../Images/icons8-facebook-48.png" alt="">
+            <img src="../Images/icons8-instagram-48.png" alt="">
+            <img src="../Images/icons8-tiktok-48.png" alt="">
+            <img src="../Images/icons8-youtube-48.png" alt="">
+        </div>
+        <div class="threeColumns">
+            <p>0676 821256826</p>
+            <p>getHealthy@office.com</p>
+            <p>Leondinger Straße 8</p>
+            <p>4060 Leonding</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

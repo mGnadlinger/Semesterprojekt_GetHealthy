@@ -1,0 +1,1077 @@
+@font-face {
+    font-family: Louis Georg Basic;
+    src: url('../Fonts/Louis George Cafe.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: Karla;
+    src: url('../Fonts/Karla-VariableFont_wght.ttf') format('TrueType');
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    font-family: Louis Georg Basic, serif;
+    font-size: 120%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 150%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 130%;
+}
+
+h4 {
+    font-size: 120%;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    outline: #186049 solid 2px;
+}
+
+.banner h1 {
+    font-weight: 500;
+    text-align: center;
+    z-index: 10;
+    color: black;
+    font-family: Karla, serif;
+    transition: all 0.5s;
+    width: 50%;
+    margin: 1.5% auto;
+}
+
+.button {
+    background-color: #186049;
+    color: white;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.button p {
+    color: white;
+}
+
+.button:hover, .banner h1:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.return {
+    margin: 0 2%;
+    transition: all 0.7s;
+
+}
+
+.return:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #186049;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.navitem {
+    width: auto;
+    margin: 0 2%;
+    font-size: 120%;
+    color: white;
+    padding: 1vw;
+    transition: all 1s;
+    text-align: center;
+
+    position: relative;
+    text-decoration: none;
+}
+
+.navitem div:hover {
+    transform: scale(1.1);
+    text-align: center;
+    color: #E4D5C7;
+}
+
+#current {
+    transform: scale(1.1);
+    text-align: center;
+    color: #E4D5C7;
+}
+
+.navitem::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 15%;
+    left: 0;
+    background-color: #E4D5C7;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navitem:hover::before {
+    transform: scaleX(1);
+}
+
+
+footer {
+    background-color: #186049;
+    font-size: 110%;
+    margin-top: 2%;
+}
+
+footer .row {
+    justify-content: center;
+}
+
+footer h1 {
+    margin: 2% 0 0 2%;
+    padding-top: 1%;
+    font-weight: lighter;
+}
+
+footer h1 b {
+    font-weight: 800;
+}
+
+
+.threeColumns {
+    width: 25%;
+    text-align: center;
+    color: white;
+}
+
+.threeColumns p a {
+    color: white;
+    padding: 1vw 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.threeColumns p a:hover {
+    transform: scale(1.1);
+    text-align: center;
+    color: #E4D5C7;
+}
+
+.threeColumns p a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 15%;
+    left: 0;
+    background-color: #E4D5C7;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.threeColumns p a:hover::before {
+    transform: scaleX(1);
+}
+
+.pin {
+    margin: 2% 0 0 2%;
+    background-image: url('../Images/PagesPictures/icon_stecknadel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pin:hover {
+    background-image: url('../Images/PagesPictures/icon_stecknadel_black.png');
+}
+
+/* Slideshow */
+.swiper {
+    width: 96%;
+    height: 10%;
+    background-color: #E4D5C7;
+    margin: 0 2%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #95877A;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #186049 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #186049 !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(24, 96, 73, 0.5);
+}
+
+/*Startseite*/
+
+#homeTippbox {
+    background-color: #E4D5C7;
+    display: flex;
+    margin: 2% 2% 5% 2%;
+    align-items: center;
+    padding: 1%;
+}
+
+#homeTippbox img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#homeTippbox > .column {
+    width: 100%;
+    align-items: flex-start;
+    padding: 2%;
+}
+
+.foodSwiper .button {
+    margin: 0 auto 8% auto;
+}
+
+.foodSwiper img {
+    width: 70%;
+    height: 70%;
+    margin: 2% auto;
+    object-fit: cover;
+}
+
+#homeTrainingsbox {
+    margin: 5% 2% 0 2%;
+    background-color: #E4D5C7;
+    padding: 2%;
+    display: flex;
+}
+
+#trainingsboxImages {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#trainingsboxImages img {
+    width: 29%;
+    margin: 0 1%;
+    padding: 0.5%;
+}
+
+#trainingsboxText {
+    width: 100%;
+
+}
+
+#trainingsboxText .button {
+    width: 15%;
+    margin: auto;
+}
+
+
+/* Gesundheitstipps*/
+#toplistBox,
+#foodIntroduction {
+    background-color: #E4D5C7;
+    padding: 1%;
+    margin: 0 2% 5% 2%;
+}
+
+#toplistBox {
+    margin: 0 20%;
+}
+
+ol {
+    font-size: 100%;
+}
+
+#toplistBox li {
+    transition: all 1s;
+}
+
+#toplistBox li:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.tippBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #E4D5C7;
+    padding: 1%;
+    margin: 2% 2%;
+}
+
+.tippBox .column {
+    width: 100%;
+}
+
+.tippBox .column h3 {
+    text-align: left;
+}
+
+.tippBox .pin {
+    width: 1.5em;
+    height: 1.5em;
+    object-fit: contain;
+    margin: 0.5%;
+}
+
+.tippBox .pin img {
+    width: 100%;
+}
+
+#pageNavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circlePageNav {
+    border-radius: 50%;
+    background-color: #95877A;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7%;
+    transition: all 0.5s;
+}
+
+.circlePageNav:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Rezepte */
+
+#allRecipes .row {
+    margin: 3% 0;
+}
+
+.foodBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #E4D5C7;
+    width: 35%;
+    margin: 2% auto;
+    transition: all 0.5s;
+    padding: 1%;
+}
+
+.foodBox:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.foodBox .pin {
+    width: 1.5em;
+    height: 1.5em;
+    object-fit: contain;
+    margin: 0.5%;
+}
+
+.foodBox .foodPicture {
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.foodBox .row {
+    justify-content: center;
+    align-items: center;
+}
+
+.foodBox h3 {
+    width: 85%;
+}
+
+.foodBoxText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foodBoxText p {
+    text-align: center;
+    background-color: #95877A;
+    padding: 3%;
+    border-radius: 2px;
+    font-size: 110%;
+}
+
+.foodBoxText p br {
+    margin: 3% 0;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.stars img {
+    width: 1.5em;
+    margin: 0 1%;
+}
+
+/* Rezepte Detail */
+
+#recipeSuggestions {
+    background-color: #E4D5C7;
+    margin: 0 2%;
+    padding: 2%;
+}
+
+#recipeSuggestions .recipeSuggestionsBox:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#recipeSuggestions .recipeSuggestionsBox {
+    background-color: #95877A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 27%;
+    margin: 1% 2%;
+    text-align: center;
+    padding: 1%;
+    transition: all 0.5s;
+}
+
+#recipeSuggestions .recipeSuggestionsBox img {
+    width: 80%;
+    height: 20vw;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+#recipe {
+    background-color: #E4D5C7;
+    margin: 5% 20% 5%;
+    padding: 2%;
+}
+
+#recipe img {
+    width: 60%;
+    height: 45vh;
+    object-fit: cover;
+    margin: 2% 20%;
+
+}
+
+#recipe hr {
+    color: rgba(149, 135, 122, 0.5);
+}
+
+
+#recipe p b {
+    margin: 2% 0;
+}
+
+#recipe p {
+    font-size: 110%;
+    margin: 1% 2%;
+}
+
+#recipe .row > p {
+    width: 30%;
+}
+
+#recipe .column {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#recipe .column input {
+    width: 15%;
+    margin-right: 4%;
+}
+
+#recipe #portionen {
+    display: flex;
+    justify-content: start;
+}
+
+/* Trainingspläne */
+.trainingsSwiper,
+.profilSwiper {
+    width: 60%;
+    margin: 0 auto 5% auto;
+}
+
+.trainingsSwiper .row,
+.profilSwiper .row {
+    background-color: #E4D5C7;
+    padding-bottom: 5%;
+
+}
+
+.trainingsSwiper .row img,
+.profilSwiper .row img {
+    object-fit: cover;
+    width: 40%;
+    padding: 0 5%;
+
+    margin: auto;
+}
+
+.trainingsSwiper p {
+    width: 100%;
+}
+
+.trainingsSwiper .row .column,
+.profilSwiper .row .column {
+    justify-content: start;
+    align-items: start;
+    width: 60%;
+    padding: 5% 2%;
+    text-align: left;
+}
+
+
+.trainingsBox {
+    display: flex;
+    width: 100%;
+    background-color: #E4D5C7;
+    margin: 2%;
+    transition: all 0.5s;
+}
+
+.trainingsBox:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.trainingsBox img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trainingsBox .column {
+    height: 100%;
+    justify-content: start;
+    padding: 0 2%;
+}
+
+.trainingsImageSwiper .swiper-slide {
+    height: 30vh;
+    width: 30vh;
+    margin: 2% 0;
+}
+
+.trainingsImageSwiper .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Trainingspläne Detail*/
+#exerciseBox {
+    background-color: #E4D5C7;
+    margin: 5% 10% 5%;
+    padding: 2%;
+}
+
+#exerciseBox img {
+    width: 40%;
+    height: 45vh;
+    object-fit: cover;
+}
+
+#exerciseBox .column {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 120%;
+}
+
+#exerciseBox .column li {
+    padding: 4%;
+    width: 100%;
+}
+
+/* Trainingsplan Details */
+
+#startExerciseBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#startExerciseBox img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Profil */
+#loginBox {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login {
+    background-color: #E4D5C7;
+    padding: 2%;
+    width: 50%;
+}
+
+#login .button {
+    width: 35%;
+}
+
+#login input {
+    width: 50%;
+}
+
+#login label {
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+}
+
+label .row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+label {
+    display: flex;
+}
+
+#accountPictureRow {
+    flex-wrap: wrap;
+}
+
+.accountPictureBox {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: all 1s;
+    border: solid 2px #E4D5C7;
+    margin: 0.5%;
+}
+
+.accountPictureBox:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.accountPictureBox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+#loginSwitch {
+    text-align: center;
+    font-size: 90%;
+    font-weight: normal;
+    transition: all;
+}
+
+#loginSwitch:hover {
+    cursor: pointer;
+    color: #186049;
+}
+
+#login .button {
+    margin: 0 auto;
+}
+
+#login #message {
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+#logout {
+    text-align: right;
+    margin-right: 2%;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+#logout:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+#profil {
+    background-color: #E4D5C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2% 5% 2%;
+}
+
+#profil #profilPicture {
+    width: 9vw;
+    height: 9vw;
+    background-color: #95877A;
+    border: solid 3px black;
+    border-radius: 50%;
+}
+
+#profil #profilPicture img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#profil .column p,
+#profil .column h3 {
+    text-align: left;
+}
+
+#profil .column {
+    margin: 0 8%;
+    justify-content: left;
+    align-self: self-start;
+}
+
+#profil .column br {
+    margin: 4% 0;
+}
+
+#pins {
+    background-color: #E4D5C7;
+    padding: 2%;
+    margin: 0 2% 5% 2%;
+}
+
+.pinedRecipeBox,
+.pinedTippBox {
+    background-color: #95877A;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pinedRecipeBox img {
+    width: 80%;
+    height: 40vh;
+    object-fit: cover;
+    margin: 2% auto;
+}
+
+.pinedTippBox {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+#savedTippsSwiper {
+    display: flex;
+    align-items: stretch;
+}
+
+
+#weekPlan {
+    background-color: #E4D5C7;
+    margin: 0 2%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weekPlanContent {
+    width: 60%;
+    margin: 0 20%;
+    padding: 1%;
+    background-color: #95877A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#weekPlanContent .row {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#weekPlanContent .anotherrow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+
+#weekPlanContent .row h4 {
+    width: 30%;
+    text-align: center;
+    font-size: 120%;
+}
+
+#weekPlanContent .row p {
+    width: 50%;
+    text-align: center;
+}
+
+#weekPlanContent label {
+    width: 70%;
+    padding: 0.5% 0;
+}
+
+#weekPlanContent select {
+    width: 30%;
+    padding: 0.5% 0;
+    border-radius: 3px;
+}
+
+#weekPlanContent option {
+    font-size: 110%;
+    margin: 10% 0;
+    padding: 5%;
+}
+
+.weekPlanCheckBox {
+    width: 2vw;
+    height: 2vw;
+    border: solid black 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.weekPlanCheckBox:hover {
+    cursor: pointer;
+    background: url('../Images/icons8-häkchen-64.png') no-repeat center;
+    background-size: contain;
+}
+
+#weekPlanContent .button {
+    width: 25%;
+}
+
+@media screen and (max-width: 1074px) {
+
+    /* Profil */
+    #login {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navitem {
+        text-align: center;
+    }
+
+    footer .row {
+        flex-direction: column;
+    }
+
+    .threeColumns {
+        width: 100%;
+    }
+
+    /* Startseite */
+    #homeTippbox {
+        flex-direction: column;
+    }
+
+    #homeTippbox img {
+        width: 80%;
+    }
+
+    #homeTippbox .button {
+        margin: 0 25%;
+    }
+
+    #homeTrainingsbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #trainingsboxImages {
+        width: 100%;
+    }
+
+    /* Trainingsplan */
+    #trainingContent .row {
+        flex-direction: column;
+        margin: 0 2%;
+    }
+
+    .trainingsBox {
+        flex-direction: column;
+        margin: 5% 0;
+    }
+
+    .trainingsBox img {
+        width: 100%;
+    }
+
+    .swiperSlideTraining .row {
+        flex-direction: column;
+    }
+
+    .swiperSlideTraining .row img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .swiperSlideTraining .row .column {
+        width: 100%;
+        align-items: center;
+    }
+
+    .swiperSlideTraining .row .column p {
+        text-align: center;
+    }
+
+    #exerciseBox .row {
+        flex-direction: column;
+    }
+
+    #exerciseBox img {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    /* Gesundheitstipps */
+    .circlePageNav {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    /* Rezepte */
+    #allRecipes .row {
+        flex-direction: column;
+    }
+
+    .foodBox {
+        width: 80%;
+    }
+
+    #login label {
+        flex-direction: column;
+    }
+
+    #login input {
+        width: 80%;
+    }
+
+    /* Rezept Details */
+    #recipe {
+        margin: 5% 10% 5%;
+    }
+
+    #recipe > .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #recipeSuggestions .recipeSuggestionsBox h4 {
+        font-size: 90%;
+    }
+
+
+    /* Profil */
+    #profil {        flex-direction: column;
+    }
+
+    #profil #profilPicture {
+        margin-top: 5%;
+        width: 13vw;
+        height: 13vw;
+    }
+
+
+    #weekPlanContent {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #weekPlanContent .button {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    #weekPlanContent .row {
+        flex-direction: column;
+    }
+
+
+    #weekPlanContent .row .anotherrow {
+        width: 80%;
+    }
+
+    #weekPlanContent .row .anotherrow .weekPlanCheckBox {
+        width: 4vw;
+        height: 4vw;
+    }
+}

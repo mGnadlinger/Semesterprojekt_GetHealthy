@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetHealthy - Rezepte </title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <script src="../JS/JSONContent/RezeptDaten.js" defer></script>
+    <script src="../JS/Rezepte.js" defer></script>
+</head>
+<body>
+<header>
+    <a href="../index.html">
+        <div class="banner">
+            <div class="bannerImages"></div>
+            <h1>Get<b>Healthy</b></h1>
+        </div>
+    </a>
+    <div class="nav">
+        <a href="Trainingsplan.html" class="navitem">
+            <div>Trainingsplan</div>
+        </a>
+        <a href="Gesundheitstipps.html" class="navitem">
+            <div>Gesundheitstipps</div>
+        </a>
+        <a href="Rezepte.html" class="navitem">
+            <div id="current">Rezepte</div>
+        </a>
+        <a href="Profil.html" class="navitem">
+            <div>Dein Profil</div>
+        </a>
+    </div>
+</header>
+<h2>Rezepte</h2>
+<h3>Gesunde Kochideen und Snacks </h3>
+<div id="foodIntroduction">
+    <h2>Ein gesundes Leben startet in der Küche</h2>
+    <p>Deine Ernährung spielt eine entscheidende Rolle für deine Gesundheit und dein Wohlbefinden. Indem du
+        bewusste Entscheidungen triffst und dich für nährstoffreiche Lebensmittel entscheidest, legst du
+        den Grundstein für einen gesünderen Lebensstil. Eine ausgewogene Ernährung kann nicht nur deine
+        körperliche Fitness verbessern, sondern auch deine mentale Gesundheit stärken und dir mehr
+        Energie für den Alltag geben. Nimm die Kontrolle über deine Ernährung in die Hand und starte
+        noch heute den Weg zu einem gesünderen und glücklicheren Leben.
+    </p>
+    <p id="startPoint"></p>
+</div>
+<div id="allRecipes"></div>
+<div id="pageNavigation">
+    <h3 onclick="previousRecipes()">&lt;</h3>
+    <div class="circlePageNav" onclick="loadAllRecipes(0)" id="circlePageNav0">1</div>
+    <div class="circlePageNav" onclick="loadAllRecipes(1)" id="circlePageNav1">2</div>
+    <div class="circlePageNav" onclick="loadAllRecipes(2)" id="circlePageNav2">3</div>
+    <div class="circlePageNav" onclick="loadAllRecipes(3)" id="circlePageNav3">4</div>
+    <h3 onclick="nextRecipes()">&gt;</h3>
+</div>
+<footer>
+    <h1>Get<b>Healthy</b></h1>
+    <div class="row">
+        <div class="threeColumns">
+            <p><a href="./Trainingsplan.html">Trainingsplan</a></p>
+            <p><a href="./Gesundheitstipps.html">Gesundheitstipps</a></p>
+            <p><a href="./Rezepte.html">Rezepte</a></p>
+            <p><a href="./Profil.html">Dein Profil</a></p>
+        </div>
+        <div class="threeColumns">
+            <p>Bleib auf dem Laufenden mit den neuesten Artikeln, Tipps und Rezepten, um einen
+                gesunden und aktiven Lebensstil zu fördern.
+            </p>
+            <img src="../Images/icons8-facebook-48.png" alt="">
+            <img src="../Images/icons8-instagram-48.png" alt="">
+            <img src="../Images/icons8-tiktok-48.png" alt="">
+            <img src="../Images/icons8-youtube-48.png" alt="">
+        </div>
+        <div class="threeColumns">
+            <p>0676 821256826</p>
+            <p>getHealthy@office.com</p>
+            <p>Leondinger Straße 8</p>
+            <p>4060 Leonding</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
