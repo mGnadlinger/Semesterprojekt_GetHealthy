@@ -1,10 +1,11 @@
-# 🍏 GetHealthy - Dein Weg zu einem gesünderen Lebensstil
+# Medientechnik Semesterprojekt 2. Klasse 
+## GetHealthy
 
 > GetHealthy ist eine interaktive Webanwendung, die Nutzer*innen motiviert und dabei unterstützt, einen **gesünderen Lebensstil** durch übersichtliche Informationen und interaktive Features zur Selbstkontrolle zu führen.
 
 ---
 
-## ✨ Features
+## Features
 
 * **Übersichtliche Informationen:** Klare und leicht verständliche Tipps zu **Ernährung**, **Fitnessübungen** und **Schlafempfehlungen**.
 * **Interaktive Elemente:** Motivierende Features, die zur aktiven Nutzung anregen.
@@ -14,7 +15,7 @@
 
 ---
 
-## 🛠️ Technologien
+## Technologien
 
 Das Projekt basiert auf modernen Webtechnologien:
 
@@ -34,7 +35,7 @@ Um die App lokal auszuführen, benötigst du Folgendes:
 
 ---
 
-## 🚀 Installation & Start
+## Installation & Start
 
 Befolge diese Schritte, um GetHealthy auf deinem lokalen System einzurichten und zu starten.
 
