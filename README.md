@@ -1,33 +1,77 @@
-# Medientechnik Semesterprojekt – 2. Klasse
+# 🍏 GetHealthy - Dein Weg zu einem gesünderen Lebensstil
 
-# GetHealthy
-**Eine interaktive Webapp für einen gesünderen Lebensstil**
-
-GetHealthy ist eine moderne, leicht bedienbare Webapplikation, die Nutzer*innen dabei unterstützt, ihren Alltag gesünder zu gestalten.  
-Die App bietet übersichtliche Informationen, motivierende Elemente und interaktive Funktionen, die den Weg zu einem gesunden Lebensstil einfacher machen.
+> GetHealthy ist eine interaktive Webanwendung, die Nutzer*innen motiviert und dabei unterstützt, einen **gesünderen Lebensstil** durch übersichtliche Informationen und interaktive Features zur Selbstkontrolle zu führen.
 
 ---
 
-## Features
+## ✨ Features
 
-### Gesundheits-Informationen kompakt
-Benutzerfreundliche Darstellungen zu Ernährung, Bewegung und allgemeinen Gesundheitstipps.
+* **Übersichtliche Informationen:** Klare und leicht verständliche Tipps zu **Ernährung**, **Fitnessübungen** und **Schlafempfehlungen**.
+* **Interaktive Elemente:** Motivierende Features, die zur aktiven Nutzung anregen.
+* **Fortschrittskontrolle:** Verfolge deine gesunden Gewohnheiten direkt in der App.
 
-### Interaktive Elemente
-Buttons, Filter, Inputs und dynamische Bereiche ermöglichen eine aktive Nutzung der Seite.
 
-### Personalisiertes Erlebnis
-Nutzer*innen können Inhalte anpassen, filtern oder speichern (z. B. über LocalStorage).
-
-### Dynamische Inhalte
-Einige Bereiche werden automatisch aus JSON-Daten generiert, um Inhalte aktuell und übersichtlich zu halten.
 
 ---
 
-## Design & Benutzererlebnis
+## 🛠️ Technologien
 
-Die App basiert auf einem professionell gestalteten UI/UX-Konzept.  
-Ziel war eine klare, moderne und motivierende Gestaltung, die die Thematik „Gesundheit“ optisch unterstreicht.
+Das Projekt basiert auf modernen Webtechnologien:
 
-Figma-Prototyp ansehen:  
-https://www.figma.com/proto/0NL2mxvPPPGlFxvx4DRz7x/Semesterprojekt_GetHeathy_GnadligerMiriam?type=design&node-id=83-521&mode=design
+* **Frontend:** **React.js** (für die Benutzeroberfläche)
+* **Styling:** **CSS/SCSS** (für ein ansprechendes Design)
+* **Laufzeitumgebung:** **Node.js**
+
+---
+
+##  Voraussetzungen
+
+Um die App lokal auszuführen, benötigst du Folgendes:
+
+* **Node.js:** Version 18 oder höher (empfohlen)
+* **npm** oder **yarn**
+* Ein aktueller Internetbrowser (Chrome, Firefox, Edge)
+
+---
+
+## 🚀 Installation & Start
+
+Befolge diese Schritte, um GetHealthy auf deinem lokalen System einzurichten und zu starten.
+
+### 1. Repository klonen
+
+Öffne dein Terminal und klone das Projekt:
+
+```bash
+git clone <REPOSITORY_URL>*
+```
+
+
+### 2. Ins Projektverzeichnis wechseln
+
+```bash
+cd gethealthy
+```
+
+### 3. Abhängigkeiten installieren
+
+Wähle je nach Präferenz npm oder yarn:
+
+```bash
+npm install
+```
+
+### 4. Lokalen Entwicklungsserver starten
+
+Starte die Anwendung ebenfalls mit deinem gewählten Paketmanager:
+
+```bash
+npm start
+```
+
+### 5. Browser öffnen
+
+Die App sollte automatisch in deinem Browser geöffnet werden. Falls nicht, navigiere manuell zu:
+
+http://localhost:3000
+
