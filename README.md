@@ -3,8 +3,6 @@
 
 > GetHealthy ist eine interaktive Webanwendung, die Nutzer*innen motiviert und dabei unterstützt, einen **gesünderen Lebensstil** durch übersichtliche Informationen und interaktive Features zur Selbstkontrolle zu führen.
 
-https://www.figma.com/proto/0NL2mxvPPPGlFxvx4DRz7x/Semesterprojekt_GetHeathy_GnadligerMiriam?node-id=14-5&starting-point-node-id=14%3A5
-
 ## Features
 
 * **Übersichtliche Informationen:** Klare und leicht verständliche Tipps zu **Ernährung**, **Fitnessübungen** und **Schlafempfehlungen**.
