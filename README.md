@@ -3,7 +3,7 @@
 
 > GetHealthy ist eine interaktive Webanwendung, die Nutzer*innen motiviert und dabei unterstützt, einen **gesünderen Lebensstil** durch übersichtliche Informationen und interaktive Features zur Selbstkontrolle zu führen.
 
----
+https://www.figma.com/proto/0NL2mxvPPPGlFxvx4DRz7x/Semesterprojekt_GetHeathy_GnadligerMiriam?node-id=14-5&starting-point-node-id=14%3A5
 
 ## Features
 
@@ -11,9 +11,11 @@
 * **Interaktive Elemente:** Motivierende Features, die zur aktiven Nutzung anregen.
 * **Fortschrittskontrolle:** Verfolge deine gesunden Gewohnheiten direkt in der App.
 
+## Figma Prototyp
 
+Den interaktiven Prototypen findest du auf Figma:  
+[GetHealthy Prototyp](https://www.figma.com/proto/0NL2mxvPPPGlFxvx4DRz7x/Semesterprojekt_GetHeathy_GnadligerMiriam?node-id=14-5&starting-point-node-id=14%3A5)
 
----
 
 ## Technologien
 
@@ -23,7 +25,6 @@ Das Projekt basiert auf modernen Webtechnologien:
 * **Styling:** **CSS/SCSS** (für ein ansprechendes Design)
 * **Laufzeitumgebung:** **Node.js**
 
----
 
 ##  Voraussetzungen
 
@@ -32,8 +33,6 @@ Um die App lokal auszuführen, benötigst du Folgendes:
 * **Node.js:** Version 18 oder höher (empfohlen)
 * **npm** oder **yarn**
 * Ein aktueller Internetbrowser (Chrome, Firefox, Edge)
-
----
 
 ## Installation & Start
 
